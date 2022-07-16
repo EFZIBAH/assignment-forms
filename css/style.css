@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 10vh;
+  background-color: white;
+  width: 100%;
+  color:rgba(0, 0, 0, 0.652) ;
+}
+.logo{
+  font-size: 40px;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .nav-links li {
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header .nav-links li a{
+  color:rgba(0, 0, 0, 0.652) ;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero-section {
+  background-image: linear-gradient(to bottom right, black, rgb(2, 2, 52));
+  height: 40vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-section .hero-section-text h1 {
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.hero-section .hero-section-text p {
+  font-size: 17px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+aside {
+  padding: 50px 150px;
+  /* display: flex; */
+  /* grid-template-columns: 1fr 1fr; */
+  column-gap: 50px;
+}
+.form {
+  background-color: white;
+  width: 350px;
+  padding: 15px 25px;
+  top: 35%;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px rgba(68, 67, 67, 0.637);
+  margin-bottom: 150px;
+}
+.info{
+  margin-left: 450px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.info h1{
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+.info p{
+  font-size: 20px;
+  color:rgba(0, 0, 0, 0.652) ;
+}
+.info h2{
+  padding: 15px 0;
+  font-size: 30px;
+}
+section {
+  position: relative;
+  height: 90vh;
+  margin-bottom: 200px;
+  /* z-index: 1; */
+}
+
+.form-input p {
+  padding-top: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.choice {
+  /* background-color: blue; */
+  padding: 5px;
+}
+
+.form-input input:nth-child(2),
+.form-input input:nth-child(4),
+.form-input input:nth-child(6) {
+  width: 300px;
+  background-color: rgb(221, 217, 217);
+  height: 40px;
+  padding-left: 10px;
+  /* align-items: center; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: 2px solid rgb(92, 90, 90);
+  border-radius: 10px;
+}
+.message input {
+  height: 130px;
+  width: 300px;
+  background-color: rgb(221, 217, 217);
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: 2px solid rgb(92, 90, 90);
+  border-radius: 10px;
+}
+.message {
+  padding-bottom: 20px;
+  text-align: end;
+  font-size: 13px;
+  color:rgb(159, 154, 154);
+}
+
+
+.process button {
+  min-width: 100px;
+  padding: 15px;
+  margin: 0 7px;
+  border: none;
+}
+.process button:first-child {
+  background-color: black;
+  color: white;
+}
+.process button:nth-child(2) {
+  background-color: transparent;
+  color: rgb(159, 154, 154);
+  font-size: 18px;
+}
+.form p:last-child {
+  color: rgb(159, 154, 154);
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+@media(max-width:800px){
+  aside{
+    display: block;
+  }
+  .info{
+    margin-top: 800px;
+    margin-left: 0;
+  }
+  header .nav-links{
+    display: none;
+  }
+}
